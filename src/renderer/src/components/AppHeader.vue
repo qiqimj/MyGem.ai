@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header-left">
-      <img class="logo" src="@renderer/assets/images/icons/logo.png" alt="logo" />
+      <div class="logo-text">优势定位IP数字人</div>
     </div>
     <div class="header-right">
       <t-dropdown :maxColumnWidth="false" :min-column-width="88" panel-top-content="" placement="bottom-right"
@@ -176,9 +176,18 @@ const saveContextAjax = async (lang) => {
     flex: 1;
     height: 100%;
 
-    .logo {
-      width: 110px;
-      height: 36px;
+    .logo-text {
+      font-family: -apple-system, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #434AF9;
+      line-height: 36px;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        opacity: 0.9;
+      }
     }
   }
 
